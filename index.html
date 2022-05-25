@@ -59,7 +59,7 @@
         <h1 class="hero-title">
           ЭФЕКТИВНОЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <button class="button" type="button" >
+        <button class="button" type="button" data-modal-open >
             Заказать услугу
         </button>
 </div>
@@ -453,20 +453,24 @@
     </div>
 </div>
      </footer>
+     
 
-    <div class="backdrop is-hidden">
+     
+
+     
+    <div class="backdrop is-hidden" data-modal>
 
         <div class="modal">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum nisi rerum libero at qui voluptates dolorum, voluptatum cumque, culpa expedita aspernatur veritatis corrupti nesciunt ipsum cum. Vero, blanditiis qui.</p>
-                <button class="close">
-                <svg>
-                    <use href="./images/icons.svg/close-black.svg"></use>
+            
+            <button class="button-close" data-modal-close>
+                <svg width="30px" height="30px">
+                    <use href="./images/icons.svg/closer.svg#close"></use>
                 </svg>
-                
-                </button>
+            </button>
 
         </div>
-    </div>
+    </div   >
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
